@@ -9,8 +9,8 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Bootstrap Select", description = "Turn checkboxes    and radio buttons    into toggle switches  ",
-        url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Select")
+@ComponentInformation(name = "Bootstrap Tags Input", description = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
+        url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Tags-Input")
 public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 {
 
