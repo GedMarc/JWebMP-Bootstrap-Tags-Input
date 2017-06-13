@@ -45,7 +45,7 @@ class BootstrapTagsInputPageConfigurator extends PageConfigurator
         if (!page.isConfigured())
         {
             JQueryPageConfigurator.setRequired(page.getBody(), true);
-            BootstrapPageConfigurator.setBootstrapRequired(page.getBody(), true);
+            BootstrapPageConfigurator.setRequired(page.getBody(), true);
             page.getBody().addJavaScriptReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getJavaScriptReference());
             page.getBody().addCssReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getCssReference());
         }

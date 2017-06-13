@@ -13,8 +13,8 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 enum BootstrapTagsInputReferencePool implements ReferencePool
 {
-    BootstrapTagsInput(new JavascriptReference("Toastr", 2.3, "bower_components/bootstrap-tagsinput/dist/js/bootstrap-tagsinput.js"),
-            new CSSReference("Toastr", 2.3, "bower_components/bootstrap-tagsinput/dist/css/bootstrap-tagsinput.css"));
+    BootstrapTagsInput(new JavascriptReference("Toastr", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
+            new CSSReference("Toastr", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
     /**
      * Any sub data
      */
