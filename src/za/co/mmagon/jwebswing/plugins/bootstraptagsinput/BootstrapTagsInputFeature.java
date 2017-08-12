@@ -11,36 +11,36 @@ import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
  */
 public class BootstrapTagsInputFeature extends Feature<BootstrapTagsInputOptions, BootstrapTagsInputFeature>
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new BootstrapTagsInputFeature
-     */
-    public BootstrapTagsInputFeature(ComponentHierarchyBase component)
-    {
-        super("BootstrapTagsInputFeature", component);
-    }
-
-    @Override
-    protected void assignFunctionsToComponent()
-    {
-        addQuery(getComponent().getJQueryID() + "tagsinput(" + getOptions() + ");" + getNewLine());
-    }
-
-    /**
-     * Returns the options
-     *
-     * @return
-     */
-    @Override
-    public BootstrapTagsInputOptions getOptions()
-    {
-        if (super.getOptions() == null)
-        {
-            setOptions(new BootstrapTagsInputOptions());
-        }
-        return super.getOptions();
-    }
-
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new BootstrapTagsInputFeature
+	 */
+	public BootstrapTagsInputFeature(ComponentHierarchyBase component)
+	{
+		super("BootstrapTagsInputFeature", component);
+	}
+	
+	@Override
+	protected void assignFunctionsToComponent()
+	{
+		addQuery(getComponent().getJQueryID() + "tagsinput(" + getOptions() + ");" + getNewLine());
+	}
+	
+	/**
+	 * Returns the options
+	 *
+	 * @return
+	 */
+	@Override
+	public BootstrapTagsInputOptions getOptions()
+	{
+		if (super.getOptions() == null)
+		{
+			setOptions(new BootstrapTagsInputOptions());
+		}
+		return super.getOptions();
+	}
+	
 }
