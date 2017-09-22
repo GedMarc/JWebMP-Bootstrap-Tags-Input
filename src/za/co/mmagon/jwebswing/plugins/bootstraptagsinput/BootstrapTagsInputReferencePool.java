@@ -25,19 +25,20 @@ enum BootstrapTagsInputReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private BootstrapTagsInputReferencePool()
+	BootstrapTagsInputReferencePool()
 	{
 	
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private BootstrapTagsInputReferencePool(String data)
+	BootstrapTagsInputReferencePool(String data)
 	{
-	
+
 	}
 	
-	private BootstrapTagsInputReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	BootstrapTagsInputReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

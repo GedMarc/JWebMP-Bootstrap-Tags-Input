@@ -24,17 +24,17 @@ public enum BootstrapTagsInputSize
 	/**
 	 * A new BootstrapTagsInputSize
 	 */
-	private BootstrapTagsInputSize()
+	BootstrapTagsInputSize()
 	{
-	
+
 	}
 	
 	/**
 	 * A new BootstrapTagsInputSize with data
 	 */
-	private BootstrapTagsInputSize(String data)
+	BootstrapTagsInputSize(String data)
 	{
-	
+
 	}
 	
 	/**
