@@ -30,14 +30,6 @@ public enum BootstrapTagsInputSize
 	}
 	
 	/**
-	 * A new BootstrapTagsInputSize with data
-	 */
-	BootstrapTagsInputSize(String data)
-	{
-
-	}
-	
-	/**
 	 * Returns the name or the data contained within
 	 *
 	 * @return

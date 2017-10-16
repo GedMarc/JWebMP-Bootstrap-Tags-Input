@@ -71,6 +71,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	 */
 	public BootstrapTagsInputOptions()
 	{
+		//Nothing Needed
 	}
 	
 	/**

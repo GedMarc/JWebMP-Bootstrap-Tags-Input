@@ -3,6 +3,8 @@ package za.co.mmagon.jwebswing.plugins.bootstraptagsinput;
 import za.co.mmagon.jwebswing.base.html.InputTextType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import java.util.Objects;
+
 /**
  * Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements.
  *
@@ -58,4 +60,28 @@ public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 		return getFeature().getOptions();
 	}
 	
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof BootstrapTagsInput))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+		BootstrapTagsInput that = (BootstrapTagsInput) o;
+		return Objects.equals(getFeature(), that.getFeature());
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
 }

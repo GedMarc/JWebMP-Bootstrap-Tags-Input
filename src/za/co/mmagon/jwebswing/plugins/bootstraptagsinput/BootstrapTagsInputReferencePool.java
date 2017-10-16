@@ -30,14 +30,6 @@ enum BootstrapTagsInputReferencePool implements ReferencePool
 	
 	}
 
-	/**
-	 * A new AngularSlimScrollReferencePool with data
-	 */
-	BootstrapTagsInputReferencePool(String data)
-	{
-
-	}
-	
 	BootstrapTagsInputReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
