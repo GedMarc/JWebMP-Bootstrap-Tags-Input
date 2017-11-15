@@ -21,6 +21,7 @@ public class BootstrapTagsInputTest extends BaseTestClass
 	}
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testSomeMethod()
 	{
 		BootstrapTagsInput bs = new BootstrapTagsInput();
@@ -29,6 +30,7 @@ public class BootstrapTagsInputTest extends BaseTestClass
 	}
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testSomeMethod2()
 	{
 		BootstrapTagsInput bs = new BootstrapTagsInput();
@@ -38,6 +40,7 @@ public class BootstrapTagsInputTest extends BaseTestClass
 	}
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testJavaScript()
 	{
 		BootstrapTagsInput bs = new BootstrapTagsInput();
@@ -46,6 +49,7 @@ public class BootstrapTagsInputTest extends BaseTestClass
 	}
 	
 	@Test
+	@SuppressWarnings("unchecked")
 	public void testHtml()
 	{
 		Page p = getInstance();
