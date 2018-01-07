@@ -27,9 +27,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapTagsInput.jar/download"
 ) class BootstrapTagsInputPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new BootstrapTagsInputPageConfigurator
 	 */
@@ -37,13 +37,13 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 	{
 		//Nothing needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
 			BootstrapPageConfigurator.setRequired(page.getBody(), true);
 			page.getBody().addJavaScriptReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getJavaScriptReference());
 			page.getBody().addCssReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getCssReference());

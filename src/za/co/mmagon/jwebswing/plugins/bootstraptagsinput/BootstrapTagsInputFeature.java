@@ -3,6 +3,8 @@ package za.co.mmagon.jwebswing.plugins.bootstraptagsinput;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * Creates toast messages
  *
@@ -11,9 +13,9 @@ import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
  */
 public class BootstrapTagsInputFeature extends Feature<BootstrapTagsInputOptions, BootstrapTagsInputFeature>
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new BootstrapTagsInputFeature
 	 */
@@ -21,13 +23,13 @@ public class BootstrapTagsInputFeature extends Feature<BootstrapTagsInputOptions
 	{
 		super("BootstrapTagsInputFeature", component);
 	}
-	
+
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "tagsinput(" + getOptions() + ");" + getNewLine());
+		addQuery(getComponent().getJQueryID() + "tagsinput(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 	}
-	
+
 	/**
 	 * Returns the options
 	 *
@@ -42,5 +44,5 @@ public class BootstrapTagsInputFeature extends Feature<BootstrapTagsInputOptions
 		}
 		return super.getOptions();
 	}
-	
+
 }
