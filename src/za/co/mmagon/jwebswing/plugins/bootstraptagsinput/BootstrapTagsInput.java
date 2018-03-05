@@ -1,27 +1,30 @@
 package za.co.mmagon.jwebswing.plugins.bootstraptagsinput;
 
-import za.co.mmagon.jwebswing.base.html.InputTextType;
+import za.co.mmagon.jwebswing.base.html.inputs.InputTextType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 import java.util.Objects;
 
 /**
- * Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements.
+ * Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select
+ * elements.
  *
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Bootstrap Tags Input", description = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
+@ComponentInformation(name = "Bootstrap Tags Input",
+		description = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
 		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Tags-Input")
-public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
+public class BootstrapTagsInput
+		extends InputTextType<BootstrapTagsInput>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The feature for this select
 	 */
 	private BootstrapTagsInputFeature feature;
-	
+
 	/*
 	 * Constructs a new BootstrapTagsInput
 	 */
@@ -29,7 +32,7 @@ public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 	{
 		addFeature(getFeature());
 	}
-	
+
 	/**
 	 * Returns the feature for this component
 	 *
@@ -43,7 +46,7 @@ public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 		}
 		return feature;
 	}
-	
+
 	/**
 	 * Sets the feature for this bootstrap drop down
 	 *
@@ -53,13 +56,13 @@ public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 	{
 		this.feature = feature;
 	}
-	
+
 	@Override
 	public BootstrapTagsInputOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
@@ -78,7 +81,7 @@ public class BootstrapTagsInput extends InputTextType<BootstrapTagsInput>
 		BootstrapTagsInput that = (BootstrapTagsInput) o;
 		return Objects.equals(getFeature(), that.getFeature());
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
