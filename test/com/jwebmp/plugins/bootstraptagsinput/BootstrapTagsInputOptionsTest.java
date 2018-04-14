@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.bootstraptagsinput;
+package com.jwebmp.plugins.bootstraptagsinput;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
  */
 public class BootstrapTagsInputOptionsTest
 {
-	
+
 	public BootstrapTagsInputOptionsTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
@@ -19,5 +19,5 @@ public class BootstrapTagsInputOptionsTest
 		bso.setFreeInput(true);
 		System.out.println(bso);
 	}
-	
+
 }

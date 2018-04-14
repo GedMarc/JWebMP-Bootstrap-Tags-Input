@@ -1,7 +1,24 @@
-package za.co.mmagon.jwebswing.plugins.bootstraptagsinput;
+/*
+ * Copyright (C) 2017 Marc Magon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+package com.jwebmp.plugins.bootstraptagsinput;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +31,7 @@ import java.util.List;
  */
 public class BootstrapTagsInputOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Classname for the tags, or a function returning a classname
@@ -65,7 +82,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	 * Boolean value controlling whether form submissions get processed when pressing enter in a field converted to a tagsinput (default: false).
 	 */
 	private Boolean cancelConfirmKeysOnEmpty;
-	
+
 	/**
 	 * Constructs a new tags input options object
 	 */
@@ -73,7 +90,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		//Nothing Needed
 	}
-	
+
 	/**
 	 * Classname for the tags, or a function returning a classname
 	 *
@@ -83,7 +100,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return tagClass;
 	}
-	
+
 	/**
 	 * Classname for the tags, or a function returning a classname
 	 *
@@ -96,7 +113,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.tagClass = tagClass;
 		return this;
 	}
-	
+
 	/**
 	 * When adding objects as tags, itemValue must be set to the name of the property containing the item's value, or a function returning an item's value.
 	 *
@@ -106,7 +123,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return itemValue;
 	}
-	
+
 	/**
 	 * When adding objects as tags, itemValue must be set to the name of the property containing the item's value, or a function returning an item's value.
 	 *
@@ -119,7 +136,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.itemValue = itemValue;
 		return this;
 	}
-	
+
 	/**
 	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this
 	 * options is not set, the value of itemValue will be used.
@@ -130,7 +147,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return itemText;
 	}
-	
+
 	/**
 	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this
 	 * options is not set, the value of itemValue will be used.
@@ -141,7 +158,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		this.itemText = itemText;
 	}
-	
+
 	/**
 	 * Array of keycodes which will add a tag when typing in the input. (default: [13, 188], which are ENTER and comma)
 	 *
@@ -155,7 +172,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		}
 		return confirmKeys;
 	}
-	
+
 	/**
 	 * Array of keycodes which will add a tag when typing in the input. (default: [13, 188], which are ENTER and comma)
 	 *
@@ -168,7 +185,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.confirmKeys = confirmKeys;
 		return this;
 	}
-	
+
 	/**
 	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
 	 *
@@ -178,7 +195,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return maxTags;
 	}
-	
+
 	/**
 	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
 	 *
@@ -191,7 +208,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.maxTags = maxTags;
 		return this;
 	}
-	
+
 	/**
 	 * Defines the maximum length of a single tag. (default: undefined)
 	 *
@@ -201,7 +218,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return maxChars;
 	}
-	
+
 	/**
 	 * Defines the maximum length of a single tag. (default: undefined)
 	 *
@@ -214,7 +231,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.maxChars = maxChars;
 		return this;
 	}
-	
+
 	/**
 	 * When true, automatically removes all whitespace around tags. (default: false)
 	 *
@@ -224,7 +241,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return trimValue;
 	}
-	
+
 	/**
 	 * When true, automatically removes all whitespace around tags. (default: false)
 	 *
@@ -237,7 +254,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.trimValue = trimValue;
 		return this;
 	}
-	
+
 	/**
 	 * When true, the same tag can be added multiple times. (default: false)
 	 *
@@ -247,7 +264,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return allowDuplicates;
 	}
-	
+
 	/**
 	 * When true, the same tag can be added multiple times. (default: false)
 	 *
@@ -260,7 +277,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.allowDuplicates = allowDuplicates;
 		return this;
 	}
-	
+
 	/**
 	 * When the input container has focus, the class specified by this config option will be applied to the container
 	 *
@@ -270,7 +287,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return focusClass;
 	}
-	
+
 	/**
 	 * When the input container has focus, the class specified by this config option will be applied to the container
 	 *
@@ -283,7 +300,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.focusClass = focusClass;
 		return this;
 	}
-	
+
 	/**
 	 * Allow creating tags which are not returned by typeahead's source (default: true)
 	 * <p>
@@ -295,7 +312,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return freeInput;
 	}
-	
+
 	/**
 	 * Allow creating tags which are not returned by typeahead's source (default: true)
 	 * <p>
@@ -310,7 +327,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.freeInput = freeInput;
 		return this;
 	}
-	
+
 	/**
 	 * Allow creating tags which are not returned by typeahead's source (default: true)
 	 * <p>
@@ -326,7 +343,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		}
 		return typeAhead;
 	}
-	
+
 	/**
 	 * Allow creating tags which are not returned by typeahead's source (default: true)
 	 * <p>
@@ -341,7 +358,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.typeAhead = typeAhead;
 		return this;
 	}
-	
+
 	/**
 	 * Boolean value controlling whether form submissions get processed when pressing enter in a field converted to a tagsinput (default: false).
 	 *
@@ -351,7 +368,7 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	{
 		return cancelConfirmKeysOnEmpty;
 	}
-	
+
 	/**
 	 * Boolean value controlling whether form submissions get processed when pressing enter in a field converted to a tagsinput (default: false).
 	 *
@@ -364,5 +381,5 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 		this.cancelConfirmKeysOnEmpty = cancelConfirmKeysOnEmpty;
 		return this;
 	}
-	
+
 }
