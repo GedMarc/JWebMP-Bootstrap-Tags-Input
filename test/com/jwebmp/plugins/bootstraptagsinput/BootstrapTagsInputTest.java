@@ -22,7 +22,6 @@
  */
 package com.jwebmp.plugins.bootstraptagsinput;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import com.jwebmp.plugins.bootstrap.forms.BSForm;
 import org.junit.jupiter.api.Test;
@@ -31,7 +30,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class BootstrapTagsInputTest
-		extends BaseTestClass
+
 {
 
 	public BootstrapTagsInputTest()
@@ -76,7 +75,7 @@ public class BootstrapTagsInputTest
 	@SuppressWarnings("unchecked")
 	public void testHtml()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		BSForm form = new BSForm();
 		BootstrapTagsInput bs = new BootstrapTagsInput();
 		p.getOptions()

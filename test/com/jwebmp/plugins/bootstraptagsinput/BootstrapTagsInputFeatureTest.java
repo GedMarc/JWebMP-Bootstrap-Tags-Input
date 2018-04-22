@@ -22,14 +22,14 @@
  */
 package com.jwebmp.plugins.bootstraptagsinput;
 
-import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
  */
 public class BootstrapTagsInputFeatureTest
-		extends BaseTestClass
+
 {
 
 	public BootstrapTagsInputFeatureTest()
@@ -39,7 +39,7 @@ public class BootstrapTagsInputFeatureTest
 	@Test
 	public void testSomeMethod()
 	{
-		BootstrapTagsInputFeature bsf = new BootstrapTagsInputFeature(getInstance().getBody());
+		BootstrapTagsInputFeature bsf = new BootstrapTagsInputFeature(new Page().getBody());
 		bsf.getOptions()
 		   .setItemText("New Value");
 		System.out.println(bsf.renderJavascript());
