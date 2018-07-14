@@ -28,7 +28,8 @@ import java.util.List;
  * @author Marc Magon
  * @since 10 Jun 2017
  */
-public class BootstrapTagsInputOptionsTypeAheadValues extends JavaScriptPart
+public class BootstrapTagsInputOptionsTypeAheadValues
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;

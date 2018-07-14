@@ -28,7 +28,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum BootstrapTagsInputReferencePool implements ReferencePool
+enum BootstrapTagsInputReferencePool
+		implements ReferencePool
 {
 	BootstrapTagsInput(new JavascriptReference("BootstrapTagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
 	                   new CSSReference("BootstrapTagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));

@@ -29,7 +29,8 @@ import java.util.List;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class BootstrapTagsInputOptions extends JavaScriptPart
+public class BootstrapTagsInputOptions
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
@@ -42,7 +43,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	 */
 	private String itemValue;
 	/**
-	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this
+	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's
+	 * value. When this
 	 * options is not set, the value of itemValue will be used.
 	 */
 	private String itemText;
@@ -51,7 +53,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	 */
 	private List<Integer> confirmKeys;
 	/**
-	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
+	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the
+	 * tagsinput element.
 	 */
 	private Integer maxTags;
 	/**
@@ -138,7 +141,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	}
 
 	/**
-	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this
+	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's
+	 * value. When this
 	 * options is not set, the value of itemValue will be used.
 	 *
 	 * @return
@@ -149,7 +153,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	}
 
 	/**
-	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's value. When this
+	 * When adding objects as tags, you can set itemText to the name of the property of item to use for a its tag's text. You may also provide a function which returns an item's
+	 * value. When this
 	 * options is not set, the value of itemValue will be used.
 	 *
 	 * @param itemText
@@ -187,7 +192,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	}
 
 	/**
-	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
+	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the
+	 * tagsinput element.
 	 *
 	 * @return
 	 */
@@ -197,7 +203,8 @@ public class BootstrapTagsInputOptions extends JavaScriptPart
 	}
 
 	/**
-	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
+	 * When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the
+	 * tagsinput element.
 	 *
 	 * @param maxTags
 	 *
