@@ -17,8 +17,8 @@
 
 package com.jwebmp.plugins.bootstraptagsinput;
 
-import com.jwebmp.base.html.inputs.InputTextType;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.inputs.InputTextType;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 import java.util.Objects;
 
