@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.bootstraptagsinput.BootstrapTagsInputPageConfigurator;
+
 module com.jwebmp.plugins.bootstraptagsinput {
 	exports com.jwebmp.plugins.bootstraptagsinput;
 
@@ -7,4 +10,7 @@ module com.jwebmp.plugins.bootstraptagsinput {
 
 	requires com.jwebmp.plugins.bootstrap;
 	requires java.validation;
+
+	provides IPageConfigurator with BootstrapTagsInputPageConfigurator;
+
 }
