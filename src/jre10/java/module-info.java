@@ -13,4 +13,5 @@ module com.jwebmp.plugins.bootstraptagsinput {
 
 	provides IPageConfigurator with BootstrapTagsInputPageConfigurator;
 
+	opens com.jwebmp.plugins.bootstraptagsinput to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
