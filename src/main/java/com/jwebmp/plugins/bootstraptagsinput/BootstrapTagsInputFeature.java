@@ -19,6 +19,7 @@ package com.jwebmp.plugins.bootstraptagsinput;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
@@ -29,7 +30,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 09 Jun 2017
  */
 public class BootstrapTagsInputFeature
-		extends Feature<BootstrapTagsInputOptions, BootstrapTagsInputFeature>
+		extends Feature<GlobalFeatures, BootstrapTagsInputOptions, BootstrapTagsInputFeature>
 {
 
 	private static final long serialVersionUID = 1L;
