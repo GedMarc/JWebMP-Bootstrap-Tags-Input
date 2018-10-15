@@ -37,14 +37,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "multi input, text input, tags, , dropdown, bootstrap, ui,web ui, framework",
 		pluginSubtitle = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
 		pluginSourceUrl = "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Bootstrap-Tags-Input/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Bootstrap-Tags-Input",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Bootstrap-Tags-Input/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Bootstrap-Tags-Input",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapTagsInput.jar/download")
 public class BootstrapTagsInputPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<BootstrapTagsInputPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled

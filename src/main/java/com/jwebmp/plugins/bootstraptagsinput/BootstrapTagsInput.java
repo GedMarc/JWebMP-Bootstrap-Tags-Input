@@ -31,7 +31,7 @@ import java.util.Objects;
  */
 @ComponentInformation(name = "Bootstrap Tags Input",
 		description = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
-		url = "https://github.com/GedMarc/JWebSwing-Bootstrap-Tags-Input")
+		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Tags-Input")
 public class BootstrapTagsInput
 		extends InputTextType<BootstrapTagsInput>
 {
