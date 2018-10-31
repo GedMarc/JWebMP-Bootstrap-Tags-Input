@@ -33,7 +33,7 @@ public class BootstrapTagsInputOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Classname for the tags, or a function returning a classname
 	 */

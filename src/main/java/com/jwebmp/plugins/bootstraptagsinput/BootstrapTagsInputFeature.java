@@ -33,7 +33,6 @@ public class BootstrapTagsInputFeature
 		extends Feature<GlobalFeatures, BootstrapTagsInputOptions, BootstrapTagsInputFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new BootstrapTagsInputFeature

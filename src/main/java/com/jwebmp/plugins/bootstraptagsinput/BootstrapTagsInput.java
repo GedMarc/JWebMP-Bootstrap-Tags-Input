@@ -36,7 +36,7 @@ public class BootstrapTagsInput
 		extends InputTextType<BootstrapTagsInput>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The feature for this select
 	 */
@@ -81,6 +81,12 @@ public class BootstrapTagsInput
 	}
 
 	@Override
+	public int hashCode()
+	{
+		return Objects.hash(super.hashCode(), getFeature());
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -97,11 +103,5 @@ public class BootstrapTagsInput
 		}
 		BootstrapTagsInput that = (BootstrapTagsInput) o;
 		return Objects.equals(getFeature(), that.getFeature());
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return Objects.hash(super.hashCode(), getFeature());
 	}
 }
